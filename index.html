@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대전 지역 알림 지도</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+<h1>📍 대전 지역 알림 시스템</h1>
+<p>지역을 선택하면 카운트다운 후 해당 지역이 지도에 표시됩니다.</p>
+
+<select id="region">
+<option value="">지역 선택</option>
+<option value="동구">동구</option>
+<option value="서구">서구</option>
+<option value="유성구">유성구</option>
+<option value="대덕구">대덕구</option>
+<option value="중구">중구</option>
+</select>
+
+<button onclick="startAlarm()">알림 시작</button>
+
+<div id="result"></div>
+<div id="timer"></div>
+
+<div class="map">
+<div id="yuseong" class="district">유성구</div>
+<div id="daedeok" class="district">대덕구</div>
+<div id="seo" class="district">서구</div>
+<div id="jung" class="district">중구</div>
+<div id="dong" class="district">동구</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
